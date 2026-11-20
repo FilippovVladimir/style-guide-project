@@ -1,0 +1,26 @@
+# Правила линтера Markdown (см. https://github.com/DavidAnson/markdownlint)
+config:
+  default: true
+  MD004:            # маркер списка — дефис (СП-1)
+    style: dash
+  MD013: false      # длина строки не ограничивается (русский текст)
+  MD024:            # одинаковые заголовки допустимы в разных разделах
+    siblings_only: true
+  MD025: true       # один заголовок первого уровня (СТ-2)
+  MD026:            # без точки и двоеточия в конце заголовка (СТ-3)
+    punctuation: ".,;:!?"
+  MD033: false      # HTML-комментарии нужны для отключения проверки терминов
+  MD040: true       # у блока кода указан язык (КД-2)
+  MD045: true       # у изображения есть альтернативный текст (РС-2)
+  MD046:
+    style: fenced
+  MD049:
+    style: asterisk
+  MD050:
+    style: asterisk
+globs:
+  - "docs/**/*.md"
+  - "*.md"
+ignores:
+  - "site/**"
+  - "node_modules/**"

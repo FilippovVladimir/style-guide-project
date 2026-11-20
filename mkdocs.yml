@@ -1,0 +1,67 @@
+site_name: Руководство по стилю документации FileTransfer
+site_description: >-
+  Правила написания и оформления документации асинхронной
+  клиент-серверной системы удалённой передачи файлов изображений
+site_author: Филиппов В. Л., Шукалов А. Д.
+site_url: https://filippovvladimir.github.io/style-guide-project/
+repo_url: https://github.com/FilippovVladimir/style-guide-project
+repo_name: style-guide-project
+edit_uri: edit/main/docs/
+docs_dir: docs
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+
+plugins:
+  - search:
+      lang: ru
+
+nav:
+  - Главная: index.md
+  - Как пользоваться руководством: how-to-use.md
+  - Стиль изложения:
+      - Тон и голос: style/tone.md
+      - Язык и грамматика: style/language.md
+      - Орфография и пунктуация: style/spelling.md
+      - Терминология: style/terminology.md
+  - Оформление:
+      - Заголовки и структура: formatting/structure.md
+      - Списки и таблицы: formatting/lists-tables.md
+      - Код и идентификаторы: formatting/code.md
+      - Рисунки и ссылки: formatting/media-links.md
+  - Содержание документов:
+      - Интерфейс и сообщения об ошибках: content/ui-errors.md
+      - Числа, даты и единицы: content/numbers.md
+  - Шаблоны:
+      - README компонента: doc-templates/readme.md
+      - Описание метода gRPC: doc-templates/rpc-method.md
+      - Инструкция оператора: doc-templates/operator-instruction.md
+  - Глоссарий: glossary.md
+  - Журнал изменений: changelog.md
