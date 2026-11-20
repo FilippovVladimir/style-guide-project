@@ -57,6 +57,7 @@ nav:
       - Списки и таблицы: formatting/lists-tables.md
       - Код и идентификаторы: formatting/code.md
       - Рисунки и ссылки: formatting/media-links.md
+      - Документы по ГОСТ: formatting/gost-documents.md
   - Содержание документов:
       - Интерфейс и сообщения об ошибках: content/ui-errors.md
       - Числа, даты и единицы: content/numbers.md
