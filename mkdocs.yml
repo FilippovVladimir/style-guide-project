@@ -51,6 +51,7 @@ nav:
       - Язык и грамматика: style/language.md
       - Орфография и пунктуация: style/spelling.md
       - Терминология: style/terminology.md
+      - Доступность текста: style/accessibility.md
   - Оформление:
       - Заголовки и структура: formatting/structure.md
       - Списки и таблицы: formatting/lists-tables.md
